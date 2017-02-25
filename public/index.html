@@ -1,66 +1,78 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Croatian Language</title>
-    <style media="screen">
-      body {
-        font-family: Roboto, Arial, sans-serif;
-        background: #ECEFF1;
-        color: rgba(0,0,0,0.87);
-      }
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.18.1), see www.w3.org">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-      a {
-        color: rgb(3,155,229);
-      }
+  <title>Croatian Language</title>
+  <link type="text/css" rel="stylesheet" href=
+  "https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css">
+</head>
 
-      #message {
-        max-width: 400px;
-        margin: 40px auto;
-        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
-        border-radius: 2px;
-        background: white;
-        padding: 16px 24px;
-      }
+<body>
+  <div id="message">
+    <h1>Welcome to CroatianLanguage</h1>
 
-      #message h1 {
-        font-size: 22px;
-        font-weight: 500;
-        text-align: center;
-        margin: 0 0 16px;
-      }
+    <p>You're here to learn croatian</p>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js" type="text/javascript"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-app.js" type="text/javascript"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-auth.js" type="text/javascript"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-database.js" type="text/javascript"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-messaging.js" type="text/javascript"></script>
+    <script src="credentials.js" type="text/javascript"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js" type="text/javascript"></script>
+    <script src="auth.js" type="text/javascript"></script>
 
-      #message p {
-        font-weight: 300;
-        line-height: 150%;
-      }
-
-      #message ul {
-        list-style: none;
-        margin: 16px 0 0;
-        padding: 0;
-        text-align: center;
-      }
-
-      #message li a {
-        display: inline-block;
-        padding: 8px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 500;
-        background: rgb(3,155,229);
-        color: white;
-        border: 1px solid rgb(3,155,229);
-        border-radius: 3px;
-        font-size: 14px;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h1>Welcome to CroatianLanguage</h1>
-      <p>Your here to learn croatian</p>
+  <div class=
+  "mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+  <div class=
+  "mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
+    <h2 class="mdl-card__title-text">Firebase Email &amp; Password
+    Authentication</h2>
     </div>
-  </body>
+
+    <div class=
+    "mdl-card__supporting-text mdl-color-text--grey-600">
+      <p>Enter an email and password below and either sign in to an
+      existing account or sign up</p><input class=
+      "mdl-textfield__input" style="display:inline;width:auto;"
+      type="text" id="email" name="email" placeholder="Email">
+      &nbsp;&nbsp;&nbsp; <input class="mdl-textfield__input" style=
+      "display:inline;width:auto;" type="password" id="password"
+      name="password" placeholder="Password"><br>
+      <br>
+      <button disabled class=
+      "mdl-button mdl-js-button mdl-button--raised" id=
+      "quickstart-sign-in" name="signin">Sign In</button>
+      &nbsp;&nbsp;&nbsp; <button class=
+      "mdl-button mdl-js-button mdl-button--raised" id=
+      "quickstart-sign-up" name="signup">Sign Up</button>
+      &nbsp;&nbsp;&nbsp; <button class=
+      "mdl-button mdl-js-button mdl-button--raised" disabled id=
+      "quickstart-verify-email" name="verify-email">Send Email
+      Verification</button> &nbsp;&nbsp;&nbsp; <button class=
+      "mdl-button mdl-js-button mdl-button--raised" id=
+      "quickstart-password-reset" name="verify-email">Send Password
+      Reset Email</button> 
+      <!-- Container where we'll display the user details -->
+
+      <div class="quickstart-user-details-container">
+        Firebase sign-in status: <span id=
+        "quickstart-sign-in-status">Unknown</span>
+
+        <div>
+          Firebase auth <code>currentUser</code> object value:
+        </div>
+        <pre>
+<code id="quickstart-account-details">null</code>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
